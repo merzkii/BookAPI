@@ -13,7 +13,7 @@ namespace BookAPI.Infrastructure.Persistance
 
             //IServiceCollection serviceCollection = services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddDbContext<DataContext>(options =>
-            options.UseSqlServer("Server = localhost; Database = BaseBook; Trusted_Connection = True;",
+            options.UseSqlServer("Server = localhost; Database = BaseBook; Trusted_Connection = True;Encrypt=true;TrustServerCertificate=true",
             b => b.MigrationsAssembly("BookAPI")));
             //services.AddScoped<IImageService, FFImageLoading.ImageService>();
 
