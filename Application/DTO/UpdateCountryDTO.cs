@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Application.DTO
 {
-    public class UpdateCountryDTO
+    public class UpdateCountryDTO:CountryDTO
     {
         public int Id { get; set; }
         
