@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Persistance.Repositories
 {
-    internal class BookRepository:IBookRepository
+    public class BookRepository:IBookRepository
     {
         private readonly DataContext Context;
         private readonly IMapper Mapper;

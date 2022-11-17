@@ -11,8 +11,8 @@ namespace BookAPI.Application.DTO
     {
         public string Name { get; set; }
         public string Surename { get; set; }
-        public Country country { get; set; }
         public int CountryID { get; set; }
+        
             
     }
 }

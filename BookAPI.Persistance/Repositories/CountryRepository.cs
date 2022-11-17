@@ -53,5 +53,12 @@ namespace BookAPI.Persistance.Repositories
             return country.Id;
 
         }
+        public async Task<Country>DeleteCountry(int id)
+        {
+            var country=await GetCountry(id);
+            Context.Remove(country);
+            await Context.SaveChangesAsync();
+            return country;
+        }
     }
 }

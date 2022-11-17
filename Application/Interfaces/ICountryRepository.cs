@@ -14,5 +14,6 @@ namespace BookAPI.Application.Interfaces
         Task<ICollection<Country>> GetCountries();
         Task<Country>GetCountry(int id);
         Task<int>UpdateCountry(UpdateCountryDTO updatecountryDTO);
+        Task<Country> DeleteCountry(int id);
     }
 }

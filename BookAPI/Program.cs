@@ -1,7 +1,7 @@
-using BookAPI.Persistance;
 using BookAPI.Infrastructure.Persistance;
-
-
+using BookAPI.Persistance.Repositories;
+using BookAPI.Application;
+using BookAPI.Application.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPersistenceLayer();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+builder.Services.AddScoped<IAuthor2BooksRepository, Author2BooksRepository>();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
