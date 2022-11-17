@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Application.DTO
 {
-    public class UpdateAuthorDTO
+    public class AuthorDTO
     {
         public string Name { get; set; }
         public string Surename { get; set; }

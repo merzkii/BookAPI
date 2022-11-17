@@ -13,6 +13,7 @@ namespace BookAPI.Persistance
         public DbSet<Author>Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Author2Books> Author2Books { get; set; }
+        public DbSet<Country> Countries { get; set; }
 
 
 

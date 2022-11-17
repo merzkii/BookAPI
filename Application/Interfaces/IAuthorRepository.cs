@@ -10,10 +10,11 @@ namespace BookAPI.Application
 {
     public interface IAuthorRepository
     {
-        Task<int> CreateAuthor(UpdateAuthorDTO authorDTO);
-        Task<ICollection<UpdateAuthorDTO>> GetAuthors();
+        Task<int> CreateAuthor(AuthorDTO authorDTO);
+        Task<ICollection<Author>> GetAuthors();
         Task<Author>GetAuthor(int id);
-        Task<int>UpdateAuthors(UpdateAuthorDTO authorDTO);
+        Task<int>UpdateAuthors(UpdateAuthorsDTO updateauthorDTO);
+        Task<Author> DeleteAuthor(int id);
 
     }
 }

@@ -9,7 +9,7 @@ namespace BookAPI.Domain
 {
     public class Book: BaseEntity
     {
-        public string Name { get; set; }
+        public string Title { get; set; }
         public ICollection<Author2Books> Author2Book { get; set; }
     }
 }
