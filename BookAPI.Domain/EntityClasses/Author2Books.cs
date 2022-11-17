@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BookAPI.Domain.EntityClasses;
 
 namespace BookAPI.Domain
 {
-    internal class Author2Books
+    public class Author2Books:BaseEntity
     {
+        public Book Book { get; set; }
+        public int BookId { get; set; } 
+        public Author Author { get; set; }
+        public int AuthorId { get; set; }
     }
 }

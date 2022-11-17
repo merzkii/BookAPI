@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookAPI.Domain.EntityClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Domain
 {
-    internal class Book
+    public class Book: BaseEntity
     {
+        public string Name { get; set; }
+        public ICollection<Author2Books> Author2Book { get; set; }
     }
 }
