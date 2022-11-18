@@ -13,6 +13,7 @@ namespace BookAPI.Persistance.Config
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
+
         }
     }
 }        

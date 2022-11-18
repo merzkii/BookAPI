@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace BookAPI.Application.DTO
 {
-    public class UpdateAuthor2BooksDTO:Author2BooksDTO
+    public class UpdateAuthor2BooksDTO
     {
         public int Id { get; set; }
+        public int BookId { get; set; }
+        public int AuthorId { get; set; }
     }
 }
