@@ -1,11 +1,6 @@
 ﻿using BookAPI.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookAPI.Persistance.Config
 {
@@ -18,7 +13,7 @@ namespace BookAPI.Persistance.Config
             builder.HasMany(x => x.Authors)
                .WithOne(x => x.Country)
                .HasForeignKey(x => x.CountryId)
-               .OnDelete(DeleteBehavior.Cascade);
+               .OnDelete(DeleteBehavior.NoAction);
         }
     }
     

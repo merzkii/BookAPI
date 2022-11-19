@@ -4,11 +4,6 @@ using BookAPI.Application.DTO.Update;
 using BookAPI.Application.Interfaces;
 using BookAPI.Domain;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookAPI.Persistance.Repositories
 {
