@@ -8,8 +8,8 @@ namespace BookAPI.Domain
         public string SureName { get; set; }    
         public Country Country { get; set; }
         public int CountryId { get; set; }
-        public List<Book> Books { get; set; }
-        public List<Author2Books> Author2Book { get; set; }
+        public ICollection<Book> Books { get; set; }
+        public ICollection<Author2Books> Author2Books { get; set; }
 
     }
 }

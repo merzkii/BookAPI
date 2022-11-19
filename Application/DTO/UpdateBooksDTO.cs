@@ -10,5 +10,6 @@ namespace BookAPI.Application.DTO
     {
         public string Title { get; set; }
         public int Id { get; set; }
+        
     }
 }
