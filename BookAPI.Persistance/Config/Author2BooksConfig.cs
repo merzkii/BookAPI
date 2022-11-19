@@ -9,11 +9,11 @@ namespace BookAPI.Persistance.Config
         public void Configure(EntityTypeBuilder<Author2Books> builder)
         {
             builder.HasOne(x => x.Author)
-                .WithMany(x => x.Author2Book)
+                .WithMany(x => x.Author2Books)
                 .HasForeignKey(x => x.AuthorId);
 
             builder.HasOne(i => i.Book)
-                .WithMany(i => i.Author2Book)
+                .WithMany(i => i.Author2Books)
                 .HasForeignKey(i => i.BookId);
 
         }

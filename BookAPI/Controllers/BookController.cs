@@ -1,4 +1,5 @@
-﻿using BookAPI.Application.DTO;
+﻿using BookAPI.Application.DTO.Create;
+using BookAPI.Application.DTO.Update;
 using BookAPI.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

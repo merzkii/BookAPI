@@ -1,10 +1,6 @@
 ﻿using BookAPI.Application.DTO;
+using BookAPI.Application.DTO.Update;
 using BookAPI.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookAPI.Application.Interfaces
 {

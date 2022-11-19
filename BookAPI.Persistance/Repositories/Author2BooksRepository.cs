@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using BookAPI.Application.DTO;
+using BookAPI.Application.DTO.Create;
+using BookAPI.Application.DTO.Update;
 using BookAPI.Application.Interfaces;
 using BookAPI.Domain;
 using Microsoft.EntityFrameworkCore;
