@@ -8,7 +8,7 @@ namespace BookAPI.Domain
         public string SureName { get; set; }    
         public Country Country { get; set; }
         public int CountryId { get; set; }
-        public ICollection<Book> Books { get; set; }
+        //public ICollection<Book> Books { get; set; }
         public ICollection<Author2Books> Author2Books { get; set; }
 
     }
